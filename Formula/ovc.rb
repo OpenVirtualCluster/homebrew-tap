@@ -1,7 +1,7 @@
 class Ovc < Formula
 desc "CLI to install the virtual-cluster-operator Helm chart"
 homepage "https://github.com/OpenVirtualCluster/cli"
-version ""
+version "v0.0.9"
 
 if OS.mac?
   if Hardware::CPU.intel?
