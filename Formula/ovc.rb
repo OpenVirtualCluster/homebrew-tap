@@ -5,18 +5,18 @@ version "v0.0.9"
 
 if OS.mac?
   if Hardware::CPU.intel?
-    url "https://github.com/OpenVirtualCluster/cli/releases/download//ovc-darwin-amd64"
+    url "https://github.com/OpenVirtualCluster/cli/releases/download/v0.0.9/ovc-darwin-amd64"
     sha256 "2f7a735bb3551b395c628b828e281996906db586c41b7159ff518002d59c1e3f"
   elsif Hardware::CPU.arm?
-    url "https://github.com/OpenVirtualCluster/cli/releases/download//ovc-darwin-arm64"
+    url "https://github.com/OpenVirtualCluster/cli/releases/download/v0.0.9/ovc-darwin-arm64"
     sha256 "e5576915a77aa096357dbe575c998cf6e05425c5bed5b2d458148791f1190fc1"
   end
 elsif OS.linux?
   if Hardware::CPU.intel?
-    url "https://github.com/OpenVirtualCluster/cli/releases/download//ovc-linux-amd64"
+    url "https://github.com/OpenVirtualCluster/cli/releases/download/v0.0.9/ovc-linux-amd64"
     sha256 "d61b5f054fe7b74cbcd6f44820ffaed7acf5a0646d01c15c04839a8556c8490e"
   elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/OpenVirtualCluster/cli/releases/download//ovc-linux-arm64"
+    url "https://github.com/OpenVirtualCluster/cli/releases/download/v0.0.9/ovc-linux-arm64"
     sha256 "18ba2c99bda45805763b10f852190ad85723564a889e8a7c779c04f938f3b445"
   end
 end
