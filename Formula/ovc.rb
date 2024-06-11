@@ -1,23 +1,23 @@
 class Ovc < Formula
 desc "CLI to install the virtual-cluster-operator Helm chart"
 homepage "https://github.com/OpenVirtualCluster/cli"
-version ""
+version "v0.0.0"
 
 if OS.mac?
   if Hardware::CPU.intel?
-    url "https://github.com/OpenVirtualCluster/cli/releases/download//ovc-darwin-amd64"
-    sha256 "23f5a8629da6195d24f7103c3d9f21eb3e0caa0b5ba711051f26323d80d3ee85"
+    url "https://github.com/OpenVirtualCluster/cli/releases/download/v0.0.0/ovc-darwin-amd64"
+    sha256 "607cd7e17e3dfcdc293d9ff50758c3125a3f8bf6af0e78fb28bda04339a20c45"
   elsif Hardware::CPU.arm?
-    url "https://github.com/OpenVirtualCluster/cli/releases/download//ovc-darwin-arm64"
-    sha256 "495696ed07a9e646788ae9c3d330b94b44994103fc22c7f59acd3b95bd0d7cc3"
+    url "https://github.com/OpenVirtualCluster/cli/releases/download/v0.0.0/ovc-darwin-arm64"
+    sha256 "4e4b7bb21664268045dd3efe2653091ee682810740bcf48ab684033817630783"
   end
 elsif OS.linux?
   if Hardware::CPU.intel?
-    url "https://github.com/OpenVirtualCluster/cli/releases/download//ovc-linux-amd64"
-    sha256 "65f749ab218bc4700f4b2cf1f2ac65a00b51ea4293eab360d9e593397122a13c"
+    url "https://github.com/OpenVirtualCluster/cli/releases/download/v0.0.0/ovc-linux-amd64"
+    sha256 "0787210f68b44fc63f1f6d76ff5bf6a7ae8fb1587f5771e639c7567f441644cc"
   elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/OpenVirtualCluster/cli/releases/download//ovc-linux-arm64"
-    sha256 "3964962138c10705c5ba01f4027bdd4536af5db584f1de00942a555bf7e5f891"
+    url "https://github.com/OpenVirtualCluster/cli/releases/download/v0.0.0/ovc-linux-arm64"
+    sha256 "e62699eb866de5d125f968d8c88e372ab5abed5b025903b96939c60d50d5906d"
   end
 end
 
